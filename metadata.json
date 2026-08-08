@@ -1,0 +1,6 @@
+{
+  "name": "AI Injury Prevention Assistant",
+  "description": "An interactive fitness platform that tracks workouts, logs pain reports, estimates injury risks, and uses Gemini AI to generate customized exercise alternatives and educational recovery guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

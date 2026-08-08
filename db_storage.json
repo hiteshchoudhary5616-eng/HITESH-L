@@ -1,0 +1,795 @@
+{
+  "Users": [
+    {
+      "UserID": 1,
+      "Name": "System Admin",
+      "Email": "admin@demo.com",
+      "Role": "admin",
+      "CreatedAt": "2026-07-09T17:52:44.036Z",
+      "Password": "$2b$10$fkvpB258GBFP5rp6Ry9iOOXAs.Phrn/qOK27IiGENP.qWqJx5U22."
+    },
+    {
+      "UserID": 2,
+      "Name": "John Doe",
+      "Email": "demo@user.com",
+      "Role": "user",
+      "CreatedAt": "2026-07-09T17:52:44.037Z",
+      "Password": "$2b$10$yQTqakkIUqI/RKVN3OXUXu6hz5keHTU4Lwy9eC6d9YqUUay77p1yu"
+    },
+    {
+      "UserID": 3,
+      "Name": "Hitesh ",
+      "Email": "hiteshchoudhary5616@gmail.com",
+      "Role": "user",
+      "CreatedAt": "2026-07-09T17:57:10.726Z",
+      "Password": "$2b$10$x2Ja1UiAIea30k6rfvNSGelCOlHEEY5TFek/0o24OgOZ5T0PDJ09q"
+    },
+    {
+      "UserID": 4,
+      "Name": "Hitesh",
+      "Email": "hiteshchoudhary5615@gmail.com",
+      "Role": "user",
+      "CreatedAt": "2026-07-10T06:33:28.870Z",
+      "Password": "$2b$10$tm3eZvRlE/uYU7lr4YbIKuqvcwk4O91PdsRpGuZ3T.wmUkINDDduS"
+    },
+    {
+      "UserID": 5,
+      "Name": "Demo User",
+      "Email": "demo_user_pptx@example.com",
+      "Role": "user",
+      "CreatedAt": "2026-08-07T17:13:27.047Z",
+      "Password": "$2b$10$38COHvosKndDqgDVw3gbs.ickoNCsCPZMVM/bsiXkWWxYrm36AJK6"
+    }
+  ],
+  "FitnessProfile": [
+    {
+      "UserID": 2,
+      "Age": 28,
+      "Gender": "Male",
+      "Height": 180,
+      "Weight": 82,
+      "BMI": 25.31,
+      "Experience": "Intermediate",
+      "Goal": "Muscle Gain"
+    },
+    {
+      "ProfileID": 1,
+      "UserID": 3,
+      "Age": 20,
+      "Gender": "Male",
+      "Height": 178,
+      "Weight": 81,
+      "BMI": 25.56,
+      "Experience": "Beginner",
+      "Goal": "Strength"
+    },
+    {
+      "ProfileID": 2,
+      "UserID": 4,
+      "Age": 25,
+      "Gender": "Male",
+      "Height": 175,
+      "Weight": 70,
+      "BMI": 22.86,
+      "Experience": "Beginner",
+      "Goal": "General Fitness"
+    }
+  ],
+  "Exercises": [
+    {
+      "ExerciseID": 1,
+      "ExerciseName": "Bench Press",
+      "MuscleGroup": "Chest",
+      "Description": "A classic upper body compound exercise targeting the pectoral muscles, anterior deltoids, and triceps.",
+      "SafetyTips": "Keep your feet flat on the floor, maintain a slight arch in your lower back, and do not flare your elbows excessively (aim for 45 degrees).",
+      "Difficulty": "Intermediate",
+      "Equipment": "Barbell, Bench",
+      "Alternatives": [
+        "Dumbbell Floor Press (Safer for shoulders)",
+        "Incline Dumbbell Press (Reduces flat bench shoulder strain)"
+      ]
+    },
+    {
+      "ExerciseID": 2,
+      "ExerciseName": "Push-ups",
+      "MuscleGroup": "Chest",
+      "Description": "A versatile bodyweight movement that strengthens the chest, shoulders, and triceps while training core stability.",
+      "SafetyTips": "Maintain a rigid plank position. Do not sag your hips or crane your neck forward.",
+      "Difficulty": "Beginner",
+      "Equipment": "Bodyweight",
+      "Alternatives": [
+        "Incline Push-ups (Easier on shoulders)",
+        "Knee Push-ups (Regressed load)"
+      ]
+    },
+    {
+      "ExerciseID": 3,
+      "ExerciseName": "Pull-ups",
+      "MuscleGroup": "Back",
+      "Description": "An advanced upper body pulling exercise focusing on the latissimus dorsi, biceps, and upper back.",
+      "SafetyTips": "Pull with your elbows, keep your shoulders depressed and retracted at the start, and control the eccentric (lowering) phase.",
+      "Difficulty": "Advanced",
+      "Equipment": "Pull-up Bar",
+      "Alternatives": [
+        "Lat Pulldown (Controls weight, easier to scale)",
+        "Inverted Rows (Lower intensity pulling)"
+      ]
+    },
+    {
+      "ExerciseID": 4,
+      "ExerciseName": "Barbell Row",
+      "MuscleGroup": "Back",
+      "Description": "A powerful back exercise targeting the lats, rhomboids, traps, and rear delts, while requiring lower back stability.",
+      "SafetyTips": "Keep a flat back, bend at the hips, and pull the bar to your lower rib cage. Avoid rounding your spine.",
+      "Difficulty": "Intermediate",
+      "Equipment": "Barbell",
+      "Alternatives": [
+        "Chest-Supported Row (Eliminates lower back load)",
+        "Seated Cable Rows (Stable seated posture)"
+      ]
+    },
+    {
+      "ExerciseID": 5,
+      "ExerciseName": "Overhead Shoulder Press",
+      "MuscleGroup": "Shoulders",
+      "Description": "A fundamental vertical pushing movement that builds shoulder strength and stability.",
+      "SafetyTips": "Keep your core engaged, glutes tight, and press in a straight line up. Avoid hyperextending your lower back.",
+      "Difficulty": "Intermediate",
+      "Equipment": "Barbell or Dumbbells",
+      "Alternatives": [
+        "Landmine Press (Safer arc-like vertical press)",
+        "Dumbbell Shoulder Press (Independent shoulder tracking)"
+      ]
+    },
+    {
+      "ExerciseID": 6,
+      "ExerciseName": "Lateral Raises",
+      "MuscleGroup": "Shoulders",
+      "Description": "An isolation exercise targeting the lateral head of the deltoids to create shoulder width.",
+      "SafetyTips": "Lead with your elbows and maintain a slight forward bend in your torso. Do not swing the weights.",
+      "Difficulty": "Beginner",
+      "Equipment": "Dumbbells",
+      "Alternatives": [
+        "Cable Lateral Raises (Continuous tension)",
+        "Machine Lateral Raises (Guarded path of motion)"
+      ]
+    },
+    {
+      "ExerciseID": 7,
+      "ExerciseName": "Barbell Back Squat",
+      "MuscleGroup": "Legs",
+      "Description": "The king of lower body compound exercises, targeting the quadriceps, glutes, hamstrings, and lower back.",
+      "SafetyTips": "Keep your heels flat, chest up, and push your knees outward. Descend until your thighs are parallel to the floor or lower.",
+      "Difficulty": "Intermediate",
+      "Equipment": "Barbell, Squat Rack",
+      "Alternatives": [
+        "Goblet Squat (Reduces spinal loading)",
+        "Leg Press (Safer alternative for lower back issues)"
+      ]
+    },
+    {
+      "ExerciseID": 8,
+      "ExerciseName": "Romanian Deadlift",
+      "MuscleGroup": "Legs",
+      "Description": "An excellent hinge pattern exercise targeting the hamstrings, glutes, and posterior chain.",
+      "SafetyTips": "Hinge at your hips, keep the weight close to your legs, and keep a flat spine. Stop when you feel a maximum stretch in hamstrings.",
+      "Difficulty": "Intermediate",
+      "Equipment": "Barbell or Dumbbells",
+      "Alternatives": [
+        "Leg Curls (Saves lower back while isolating hamstrings)",
+        "Glute Bridges (Glute focus without back bending)"
+      ]
+    },
+    {
+      "ExerciseID": 9,
+      "ExerciseName": "Bicep Curl",
+      "MuscleGroup": "Arms",
+      "Description": "An isolation exercise focusing strictly on the biceps brachii.",
+      "SafetyTips": "Keep your elbows pinned to your sides. Avoid swinging your body to lift the weight.",
+      "Difficulty": "Beginner",
+      "Equipment": "Dumbbells or Barbell",
+      "Alternatives": [
+        "Hammer Curls (Target brachioradialis)",
+        "Preacher Curls (Eliminates cheating)"
+      ]
+    },
+    {
+      "ExerciseID": 10,
+      "ExerciseName": "Tricep Overhead Extension",
+      "MuscleGroup": "Arms",
+      "Description": "An exercise targeting the long head of the triceps by placing them in a deep stretch.",
+      "SafetyTips": "Keep your upper arms vertical and close to your ears. Avoid flaring your elbows outward.",
+      "Difficulty": "Beginner",
+      "Equipment": "Dumbbell",
+      "Alternatives": [
+        "Cable Tricep Pushdowns (Safer elbow position)",
+        "Dips (Compound arms/chest extension)"
+      ]
+    },
+    {
+      "ExerciseID": 11,
+      "ExerciseName": "Plank",
+      "MuscleGroup": "Core",
+      "Description": "An isometric core strength exercise that tests abdominal endurance and full-body rigidity.",
+      "SafetyTips": "Squeeze your glutes and core, keep a straight line from your head to your heels, and do not let your lower back sag.",
+      "Difficulty": "Beginner",
+      "Equipment": "Bodyweight",
+      "Alternatives": [
+        "Deadbugs (Active dynamic core stability)",
+        "Bird-Dog (Gentler lumbar loading)"
+      ]
+    }
+  ],
+  "WorkoutHistory": [
+    {
+      "WorkoutID": 1,
+      "UserID": 2,
+      "Exercise": "Bench Press",
+      "MuscleGroup": "Chest",
+      "Weight": 80,
+      "Sets": 4,
+      "Reps": 8,
+      "Duration": 45,
+      "Difficulty": "Hard",
+      "WorkoutDate": "2026-06-29",
+      "Notes": "Felt slight tightness in my right shoulder on the last set."
+    },
+    {
+      "WorkoutID": 2,
+      "UserID": 2,
+      "Exercise": "Pull-ups",
+      "MuscleGroup": "Back",
+      "Weight": 0,
+      "Sets": 3,
+      "Reps": 10,
+      "Duration": 30,
+      "Difficulty": "Medium",
+      "WorkoutDate": "2026-06-30",
+      "Notes": "Lats felt great. Controlled descent."
+    },
+    {
+      "WorkoutID": 3,
+      "UserID": 2,
+      "Exercise": "Barbell Back Squat",
+      "MuscleGroup": "Legs",
+      "Weight": 100,
+      "Sets": 4,
+      "Reps": 6,
+      "Duration": 50,
+      "Difficulty": "Hard",
+      "WorkoutDate": "2026-07-01",
+      "Notes": "Legs were fatigued but form felt solid."
+    },
+    {
+      "WorkoutID": 4,
+      "UserID": 2,
+      "Exercise": "Overhead Shoulder Press",
+      "MuscleGroup": "Shoulders",
+      "Weight": 50,
+      "Sets": 3,
+      "Reps": 8,
+      "Duration": 40,
+      "Difficulty": "Hard",
+      "WorkoutDate": "2026-07-03",
+      "Notes": "Right shoulder felt some pinching when pressing lockout."
+    },
+    {
+      "WorkoutID": 5,
+      "UserID": 2,
+      "Exercise": "Bench Press",
+      "MuscleGroup": "Chest",
+      "Weight": 85,
+      "Sets": 3,
+      "Reps": 6,
+      "Duration": 45,
+      "Difficulty": "Very Hard",
+      "WorkoutDate": "2026-07-05",
+      "Notes": "Shoulder pain became prominent on set 3. Had to stop."
+    },
+    {
+      "WorkoutID": 6,
+      "UserID": 2,
+      "Exercise": "Bicep Curl",
+      "MuscleGroup": "Arms",
+      "Weight": 15,
+      "Sets": 3,
+      "Reps": 12,
+      "Duration": 20,
+      "Difficulty": "Medium",
+      "WorkoutDate": "2026-07-07",
+      "Notes": "Arm accessory day. Quick pump."
+    },
+    {
+      "WorkoutID": 7,
+      "UserID": 3,
+      "Exercise": "Lateral Raises",
+      "MuscleGroup": "Shoulders",
+      "Weight": 25,
+      "Sets": 3,
+      "Reps": 10,
+      "Duration": 45,
+      "Difficulty": "Medium",
+      "WorkoutDate": "2026-07-09",
+      "Notes": ""
+    },
+    {
+      "WorkoutID": 8,
+      "UserID": 4,
+      "Exercise": "Bicep Curl",
+      "MuscleGroup": "Arms",
+      "Weight": 20,
+      "Sets": 3,
+      "Reps": 10,
+      "Duration": 31,
+      "Difficulty": "Easy",
+      "WorkoutDate": "2026-07-10",
+      "Notes": ""
+    },
+    {
+      "WorkoutID": 9,
+      "UserID": 4,
+      "Exercise": "Overhead Shoulder Press",
+      "MuscleGroup": "Shoulders",
+      "Weight": 60,
+      "Sets": 3,
+      "Reps": 10,
+      "Duration": 45,
+      "Difficulty": "Medium",
+      "WorkoutDate": "2026-07-10",
+      "Notes": ""
+    },
+    {
+      "WorkoutID": 10,
+      "UserID": 4,
+      "Exercise": "Lateral Raises",
+      "MuscleGroup": "Shoulders",
+      "Weight": 60,
+      "Sets": 3,
+      "Reps": 10,
+      "Duration": 45,
+      "Difficulty": "Medium",
+      "WorkoutDate": "2026-07-11",
+      "Notes": ""
+    },
+    {
+      "WorkoutID": 11,
+      "UserID": 5,
+      "Exercise": "Back Squat",
+      "MuscleGroup": "Legs",
+      "Weight": 100,
+      "Sets": 4,
+      "Reps": 10,
+      "Duration": 45,
+      "Difficulty": "Hard",
+      "WorkoutDate": "2026-08-07",
+      "Notes": ""
+    },
+    {
+      "WorkoutID": 12,
+      "UserID": 3,
+      "Exercise": "Tricep Overhead Extension",
+      "MuscleGroup": "Arms",
+      "Weight": 40,
+      "Sets": 3,
+      "Reps": 10,
+      "Duration": 20,
+      "Difficulty": "Medium",
+      "WorkoutDate": "2026-08-08",
+      "Notes": ""
+    }
+  ],
+  "PainReports": [
+    {
+      "PainID": 1,
+      "UserID": 2,
+      "BodyPart": "Shoulder",
+      "Exercise": "Bench Press",
+      "PainLevel": 6,
+      "PainType": "Sharp pinching",
+      "Duration": "3 days",
+      "Notes": "Pinched feeling in front of right shoulder at the bottom of the bench press. Stiff the next morning.",
+      "ReportDate": "2026-07-06"
+    },
+    {
+      "PainID": 2,
+      "UserID": 3,
+      "BodyPart": "Shoulder",
+      "Exercise": "None",
+      "PainLevel": 4,
+      "PainType": "Dull Ache",
+      "Duration": "2 days",
+      "Notes": "",
+      "ReportDate": "2026-07-09"
+    },
+    {
+      "PainID": 3,
+      "UserID": 4,
+      "BodyPart": "Shoulder",
+      "Exercise": "lateral rises",
+      "PainLevel": 5,
+      "PainType": "Dull Ache",
+      "Duration": "2 days",
+      "Notes": "",
+      "ReportDate": "2026-07-10"
+    },
+    {
+      "PainID": 4,
+      "UserID": 4,
+      "BodyPart": "Wrist",
+      "Exercise": "forearms",
+      "PainLevel": 6,
+      "PainType": "Throbbing",
+      "Duration": "2 days",
+      "Notes": "",
+      "ReportDate": "2026-07-11"
+    },
+    {
+      "PainID": 5,
+      "UserID": 3,
+      "BodyPart": "Wrist",
+      "Exercise": "None",
+      "PainLevel": 3,
+      "PainType": "Dull Ache",
+      "Duration": "2 days",
+      "Notes": "",
+      "ReportDate": "2026-08-08"
+    }
+  ],
+  "AIRecommendations": [
+    {
+      "RecommendationID": 1,
+      "UserID": 2,
+      "PainID": 1,
+      "Recommendation": "Based on your report of sharp pinching in your Shoulder during Bench Press, you may be experiencing minor rotator cuff impingement or tendonitis.\n\n**Possible Causes:**\n- Too much shoulder internal rotation or flaring elbow position during flat chest press.\n- High training volume (multiple pressing workouts in 6 days) with insufficient back pulling to support chest posture.\n\n**Recommendations:**\n1. **Switch Exercises**: Temporarily substitute standard Bench Press with **Dumbbell Floor Press** or **Incline Dumbbell Press**.\n2. **Modify Technique**: Pull your shoulder blades back and down before lifting, and keep elbows angled at 45 degrees rather than flared.\n3. **Warm-up**: Spend 5-10 minutes warming up rotator cuffs using resistance bands.\n4. **Volume Adjustment**: Rest the shoulder from all overhead pressing and bench presses for at least 7 days.\n\n*Disclaimer: Educational guidance only. Not a medical diagnosis. If pain persists or worsens, consult a physical therapist or sports medicine specialist.*",
+      "RiskLevel": "Medium",
+      "CreatedAt": "2026-07-06T00:00:00.000Z"
+    },
+    {
+      "RecommendationID": 2,
+      "UserID": 4,
+      "PainID": 3,
+      "Recommendation": "{\"causes\":[\"Overuse of the rotator cuff muscles due to back-to-back overhead and abduction movements without adequate recovery time\",\"Impingement syndrome risk caused by excessive internal rotation during heavy lateral raises\",\"Potential muscular imbalance where the anterior deltoids are overstressed compared to the stabilizing posterior cuff muscles\"],\"recommendations\":[\"Implement at least one full rest day between shoulder-dominant sessions to allow for soft tissue repair\",\"Reduce the weight on lateral raises to prioritize form and shoulder blade stability over total load\",\"Ensure the thumb leads or is neutral during lateral raises to reduce the risk of subacromial impingement\"],\"recoveryAdvice\":[\"Perform thoracic spine extensions using a foam roller to improve overhead mobility\",\"Incorporate sleeper stretches to address tightness in the posterior capsule\",\"Apply active rest by avoiding overhead movements for 3-5 days to reduce inflammation\"],\"saferAlternatives\":[\"Cable lateral raises to maintain constant tension and allow for a more ergonomic movement path\",\"Face pulls to strengthen the rear deltoids and external rotators, which balances the shoulder joint\",\"Scaption raises with lighter weights to work the shoulders in the scapular plane\"],\"riskLevel\":\"Medium\",\"riskExplanation\":\"The current injury risk is considered medium due to the high volume of shoulder-intensive training with insufficient recovery time. Specifically, performing 60kg overhead presses followed by lateral raises creates excessive cumulative fatigue in the shoulder complex. A dull ache indicates early-stage tendinopathy or irritation; if volume is not reduced immediately, there is a risk of developing a chronic inflammatory issue that may require extended periods of total rest.\",\"riskScore\":8,\"factors\":[\"Overuse of the rotator cuff muscles due to back-to-back overhead and abduction movements without adequate recovery time\",\"Impingement syndrome risk caused by excessive internal rotation during heavy lateral raises\",\"Potential muscular imbalance where the anterior deltoids are overstressed compared to the stabilizing posterior cuff muscles\"],\"rehabTips\":[\"Perform thoracic spine extensions using a foam roller to improve overhead mobility\",\"Incorporate sleeper stretches to address tightness in the posterior capsule\",\"Apply active rest by avoiding overhead movements for 3-5 days to reduce inflammation\"],\"explanation\":\"The current injury risk is considered medium due to the high volume of shoulder-intensive training with insufficient recovery time. Specifically, performing 60kg overhead presses followed by lateral raises creates excessive cumulative fatigue in the shoulder complex. A dull ache indicates early-stage tendinopathy or irritation; if volume is not reduced immediately, there is a risk of developing a chronic inflammatory issue that may require extended periods of total rest.\"}",
+      "RiskLevel": "Medium",
+      "CreatedAt": "2026-07-10T06:36:20.809Z"
+    },
+    {
+      "RecommendationID": 3,
+      "UserID": 4,
+      "PainID": 3,
+      "Recommendation": "{\"causes\":[\"Overuse of the deltoid muscles through back-to-back heavy overhead pressing and lateral raise sessions\",\"Improper internal rotation of the humerus during lateral raises causing impingement of the subacromial space\",\"Lack of adequate recovery time between compound shoulder presses and isolation work\"],\"recommendations\":[\"Implement at least 48 hours of rest between heavy shoulder-focused training sessions\",\"Reduce weight on lateral raises and prioritize controlled tempo and perfect form over heavy load\",\"Focus on warming up the rotator cuff with external rotation exercises before starting any pressing movements\"],\"recoveryAdvice\":[\"Perform doorway pectoral stretches to open the chest and improve thoracic mobility\",\"Utilize light resistance band external rotations to stabilize the shoulder joint\",\"Incorporate gentle cross-body arm stretches to relieve tension in the posterior deltoid\"],\"saferAlternatives\":[\"Cable lateral raises to maintain constant tension without the extreme fatigue associated with heavy dumbbells\",\"Scaption (lateral raises performed at a 30-degree angle to the front) to align better with the scapular plane\",\"Face pulls to improve posterior shoulder health and counter heavy pressing volume\"],\"riskLevel\":\"Medium\",\"riskExplanation\":\"The combination of 60kg overhead presses followed quickly by 60kg lateral raises indicates a high cumulative load on the shoulder complex without sufficient recovery. A dull ache suggests early-stage irritation or inflammatory response within the shoulder tendons. Continued high-intensity training with this specific pain pattern could lead to chronic tendonitis or bursitis; recovery is expected within 1-2 weeks if volume is adjusted appropriately.\",\"riskScore\":8,\"factors\":[\"Overuse of the deltoid muscles through back-to-back heavy overhead pressing and lateral raise sessions\",\"Improper internal rotation of the humerus during lateral raises causing impingement of the subacromial space\",\"Lack of adequate recovery time between compound shoulder presses and isolation work\"],\"rehabTips\":[\"Perform doorway pectoral stretches to open the chest and improve thoracic mobility\",\"Utilize light resistance band external rotations to stabilize the shoulder joint\",\"Incorporate gentle cross-body arm stretches to relieve tension in the posterior deltoid\"],\"explanation\":\"The combination of 60kg overhead presses followed quickly by 60kg lateral raises indicates a high cumulative load on the shoulder complex without sufficient recovery. A dull ache suggests early-stage irritation or inflammatory response within the shoulder tendons. Continued high-intensity training with this specific pain pattern could lead to chronic tendonitis or bursitis; recovery is expected within 1-2 weeks if volume is adjusted appropriately.\"}",
+      "RiskLevel": "Medium",
+      "CreatedAt": "2026-07-10T06:36:42.316Z"
+    },
+    {
+      "RecommendationID": 4,
+      "UserID": 4,
+      "PainID": 4,
+      "Recommendation": "{\"causes\":[\"Excessive wrist extension under load during bicep curls leading to strain on the carpal tendons\",\"Improper grip positioning during heavy overhead pressing causing ulnar deviation\",\"Inadequate wrist stability for the intensity of forearm and upper body training volume\"],\"recommendations\":[\"Ensure wrists remain in a neutral, straight alignment during all pressing and curling movements\",\"Reduce training intensity by 20% to allow for connective tissue adaptation before increasing weight\",\"Focus on mind-muscle connection rather than ego lifting to avoid compensating with wrist flexion\"],\"recoveryAdvice\":[\"Perform gentle wrist circles and static prayer stretches 2-3 times daily to improve flexibility\",\"Apply ice packs for 10-15 minutes after workouts to manage inflammation\",\"Utilize a foam roller on the forearm muscles to release tension that may be pulling on the wrist joint\"],\"saferAlternatives\":[\"Utilize an EZ-bar for bicep curls to place the wrists in a more natural, semi-supinated angle\",\"Switch to neutral-grip dumbbell presses to reduce mechanical stress on the wrist stabilizers\"],\"riskLevel\":\"Medium\",\"riskExplanation\":\"A 6/10 throbbing pain indicates active inflammation or acute tendonitis in the wrist complex. Given your beginner experience level, the current weight loads on your overhead press and curls may be causing form breakdown, specifically wrist hyperextension under load. Recovery typically requires 7-14 days of modified training intensity and strict focus on neutral joint alignment to prevent long-term overuse issues.\",\"riskScore\":9,\"factors\":[\"Excessive wrist extension under load during bicep curls leading to strain on the carpal tendons\",\"Improper grip positioning during heavy overhead pressing causing ulnar deviation\",\"Inadequate wrist stability for the intensity of forearm and upper body training volume\"],\"rehabTips\":[\"Perform gentle wrist circles and static prayer stretches 2-3 times daily to improve flexibility\",\"Apply ice packs for 10-15 minutes after workouts to manage inflammation\",\"Utilize a foam roller on the forearm muscles to release tension that may be pulling on the wrist joint\"],\"explanation\":\"A 6/10 throbbing pain indicates active inflammation or acute tendonitis in the wrist complex. Given your beginner experience level, the current weight loads on your overhead press and curls may be causing form breakdown, specifically wrist hyperextension under load. Recovery typically requires 7-14 days of modified training intensity and strict focus on neutral joint alignment to prevent long-term overuse issues.\"}",
+      "RiskLevel": "Medium",
+      "CreatedAt": "2026-07-10T06:41:21.160Z"
+    },
+    {
+      "RecommendationID": 5,
+      "UserID": 3,
+      "PainID": 2,
+      "Recommendation": "{\"causes\":[\"Improper form during lateral raises leading to supraspinatus tendon impingement\",\"Overuse of the deltoids without adequate recovery for a beginner\",\"Potential muscle imbalance between the front and rear deltoids\"],\"recommendations\":[\"Reduce the weight used on lateral raises and focus on controlled tempo\",\"Implement a deload week to allow connective tissues to adapt\",\"Ensure you are retracting your scapula during all pressing and raising movements\"],\"recoveryAdvice\":[\"Perform doorway pectoral stretches to open the chest and reduce anterior shoulder tension\",\"Use a lacrosse ball to perform myofascial release on the posterior deltoids\",\"Incorporate external rotation exercises with a resistance band\"],\"saferAlternatives\":[\"Cable lateral raises for more consistent tension and reduced torque\",\"Face pulls to strengthen the rear deltoids and improve shoulder stability\"],\"riskLevel\":\"Medium\",\"riskExplanation\":\"While the user is a beginner, the report of a 4/10 dull ache indicates an inflammatory response. Lateral raises with heavy weight (25kg) is very high for a beginner and likely caused excessive stress on the shoulder joint capsule. If ignored, this could progress to tendonitis, but with immediate rest and form correction, recovery should take 7-14 days.\",\"riskScore\":0,\"factors\":[\"Improper form during lateral raises leading to supraspinatus tendon impingement\",\"Overuse of the deltoids without adequate recovery for a beginner\",\"Potential muscle imbalance between the front and rear deltoids\"],\"rehabTips\":[\"Perform doorway pectoral stretches to open the chest and reduce anterior shoulder tension\",\"Use a lacrosse ball to perform myofascial release on the posterior deltoids\",\"Incorporate external rotation exercises with a resistance band\"],\"explanation\":\"While the user is a beginner, the report of a 4/10 dull ache indicates an inflammatory response. Lateral raises with heavy weight (25kg) is very high for a beginner and likely caused excessive stress on the shoulder joint capsule. If ignored, this could progress to tendonitis, but with immediate rest and form correction, recovery should take 7-14 days.\"}",
+      "RiskLevel": "Medium",
+      "CreatedAt": "2026-08-08T04:23:23.916Z"
+    },
+    {
+      "RecommendationID": 6,
+      "UserID": 3,
+      "PainID": 5,
+      "Recommendation": "{\"causes\":[\"Improper wrist positioning during overhead extensions causing hyperextension under load\",\"Lack of wrist extensor or flexor strength to stabilize heavy loads relative to current training maturity\",\"Insufficient grip technique leading to uneven weight distribution across the carpal bones\"],\"recommendations\":[\"Ensure the wrist remains in a neutral, straight alignment throughout overhead movements\",\"Incorporate gradual progressive overload rather than large weight jumps to allow connective tissue adaptation\",\"Evaluate grip width to ensure the barbell or dumbbell center of mass aligns directly over the forearm\"],\"recoveryAdvice\":[\"Perform gentle wrist circles and forearm flexor/extensor stretches daily\",\"Apply ice packs for 10-15 minutes if inflammation persists after training sessions\",\"Incorporate 2-3 days of active rest for the wrists before resuming heavy overhead pressing\"],\"saferAlternatives\":[\"Use a neutral grip bar or dumbbells to reduce torsional stress on the wrist joints\",\"Switch to cable tricep extensions to allow for a more natural, fluid movement path\",\"Utilize wrist wraps for additional support during heavier compound sets\"],\"riskLevel\":\"Low\",\"riskExplanation\":\"The current pain level of 3/10 is characteristic of minor connective tissue strain or tendonitis, common in beginner athletes transitioning into strength training. Because there is no acute injury event, the risk remains Low; however, persistent wrist ache suggests that current form during overhead extensions may be placing unnecessary shearing forces on the carpal joint. With proper technical adjustment, reduced volume, and adequate rest, recovery is expected within 5-7 days.\",\"riskScore\":5,\"factors\":[\"Improper wrist positioning during overhead extensions causing hyperextension under load\",\"Lack of wrist extensor or flexor strength to stabilize heavy loads relative to current training maturity\",\"Insufficient grip technique leading to uneven weight distribution across the carpal bones\"],\"rehabTips\":[\"Perform gentle wrist circles and forearm flexor/extensor stretches daily\",\"Apply ice packs for 10-15 minutes if inflammation persists after training sessions\",\"Incorporate 2-3 days of active rest for the wrists before resuming heavy overhead pressing\"],\"explanation\":\"The current pain level of 3/10 is characteristic of minor connective tissue strain or tendonitis, common in beginner athletes transitioning into strength training. Because there is no acute injury event, the risk remains Low; however, persistent wrist ache suggests that current form during overhead extensions may be placing unnecessary shearing forces on the carpal joint. With proper technical adjustment, reduced volume, and adequate rest, recovery is expected within 5-7 days.\"}",
+      "RiskLevel": "Low",
+      "CreatedAt": "2026-08-08T04:29:34.014Z"
+    },
+    {
+      "RecommendationID": 7,
+      "UserID": 3,
+      "PainID": 5,
+      "Recommendation": "{\"causes\":[\"Wrist hyperextension during overhead pressing or extension movements due to poor alignment\",\"Overuse of stabilizer muscles in the forearm that have not yet adapted to the load\",\"Lack of grip strength causing instability in the distal radioulnar joint\"],\"recommendations\":[\"Focus on maintaining a neutral 'stacked' wrist position where the barbell or dumbbell aligns directly over the forearm bones\",\"Reduce total set volume or weight temporarily to allow connective tissues to adapt to current stimulus\",\"Incorporate specific forearm strengthening exercises like wrist curls or reverse curls to improve stability\"],\"recoveryAdvice\":[\"Perform gentle wrist circles and static prayer stretches to improve mobility\",\"Use contrast therapy with alternating hot and cold packs to manage localized dull aches\",\"Ensure 48-72 hours of recovery for the wrist extensors between high-intensity upper body sessions\"],\"saferAlternatives\":[\"Replace barbell tricep overhead extensions with rope cable extensions to allow for a neutral, more comfortable wrist orientation\",\"Utilize neutral-grip dumbbells or kettlebells to minimize torque on the wrist joint during shoulder-focused movements\"],\"riskLevel\":\"Low\",\"riskExplanation\":\"The current injury risk is considered low, primarily because the pain is minor (3/10) and the training volume is relatively moderate for a beginner. The dull ache is likely a response to localized repetitive stress or suboptimal wrist positioning during isolation movements. Given your beginner status, your musculoskeletal system is still adapting to the mechanical demands of resistance training. Recovery time is expected to be short, provided you address wrist alignment and allow for adequate rest between training sessions.\",\"riskScore\":5,\"factors\":[\"Wrist hyperextension during overhead pressing or extension movements due to poor alignment\",\"Overuse of stabilizer muscles in the forearm that have not yet adapted to the load\",\"Lack of grip strength causing instability in the distal radioulnar joint\"],\"rehabTips\":[\"Perform gentle wrist circles and static prayer stretches to improve mobility\",\"Use contrast therapy with alternating hot and cold packs to manage localized dull aches\",\"Ensure 48-72 hours of recovery for the wrist extensors between high-intensity upper body sessions\"],\"explanation\":\"The current injury risk is considered low, primarily because the pain is minor (3/10) and the training volume is relatively moderate for a beginner. The dull ache is likely a response to localized repetitive stress or suboptimal wrist positioning during isolation movements. Given your beginner status, your musculoskeletal system is still adapting to the mechanical demands of resistance training. Recovery time is expected to be short, provided you address wrist alignment and allow for adequate rest between training sessions.\"}",
+      "RiskLevel": "Low",
+      "CreatedAt": "2026-08-08T04:31:51.025Z"
+    }
+  ],
+  "RecoveryPlans": [
+    {
+      "RecoveryID": 1,
+      "UserID": 2,
+      "Advice": "Rest shoulder from pressing exercises, perform rotator cuff stretches and band wall walks.",
+      "RecoveryDays": 7,
+      "Status": "Active"
+    }
+  ],
+  "ChatHistory": [
+    {
+      "ChatID": 1,
+      "UserID": 4,
+      "Question": "What exercises are safe to train with shoulder pain?",
+      "Response": "If you have a 5/10 dull ache, **stop all overhead pressing and lateral raises immediately.** Continuing through pain often leads to impingement or rotator cuff tendinopathy.\n\n### Safe Alternatives\n*   **Isometric Holds:** Perform wall-press isometrics to maintain engagement without joint movement.\n*   **External Rotation:** Use a light resistance band to strengthen the rotator cuff (keep elbows tucked to sides).\n*   **Scapular Retractions:** Focus on squeezing shoulder blades together to improve postural stability.\n*   **Neutral Grip Rows:** Use a neutral grip to reduce internal rotation, which is safer for the subacromial space.\n\n### Safety Protocol\n*   **Range of Motion:** Never train into the \"pain zone.\" If it hurts, reduce the range or stop.\n*   **Load:** Lower weight significantly; focus on controlled eccentrics (lowering phase).\n*   **Consult:** See a physical therapist if pain persists for more than a week.\n\n*Disclaimer: This is educational fitness guidance only, not a medical diagnosis. If you experience severe, shooting, or persistent pain, numbness, swelling, or loss of mobility, please stop exercising immediately and seek a professional medical diagnosis.*",
+      "Timestamp": "2026-07-10T06:38:23.274Z"
+    }
+  ],
+  "Notifications": [
+    {
+      "NotificationID": 1,
+      "UserID": 2,
+      "Title": "Welcome to Injury Prevention Assistant!",
+      "Message": "Complete your fitness profile to enable personalized injury risk calculations and AI recommended alternatives!",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-09T17:52:44.037Z"
+    },
+    {
+      "NotificationID": 2,
+      "UserID": null,
+      "Title": "System Announcement: Safety Guidelines",
+      "Message": "Always warm up for at least 5-10 minutes prior to lifting heavy loads to protect tendons and dynamic stabilizers.",
+      "Status": "read",
+      "IsAnnouncement": true,
+      "CreatedAt": "2026-07-09T17:52:44.037Z"
+    },
+    {
+      "NotificationID": 3,
+      "UserID": 3,
+      "Title": "Welcome aboard!",
+      "Message": "Hi Hitesh , welcome to the AI Injury Prevention Assistant. Complete your fitness profile to get detailed biomechanical injury risk scoring!",
+      "Status": "read",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-09T17:57:10.728Z"
+    },
+    {
+      "NotificationID": 4,
+      "UserID": 4,
+      "Title": "Welcome aboard!",
+      "Message": "Hi Hitesh, welcome to the AI Injury Prevention Assistant. Complete your fitness profile to get detailed biomechanical injury risk scoring!",
+      "Status": "read",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-10T06:33:28.883Z"
+    },
+    {
+      "NotificationID": 5,
+      "UserID": 4,
+      "Title": "Recovery Reminder: Focus on Mobility",
+      "Message": "You logged an active pain of 5/10 for your Shoulder recently. Prioritize 15 minutes of dedicated dynamic stretching and mobility exercises today.",
+      "Status": "read",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-10T06:36:08.030Z"
+    },
+    {
+      "NotificationID": 6,
+      "UserID": 4,
+      "Title": "AI Safety Analysis Complete",
+      "Message": "Your Injury Risk is estimated as Medium. Alternatives recommended: Cable lateral raises to maintain constant tension and allow for a more ergonomic movement path, Face pulls to strengthen the rear deltoids and external rotators, which balances the shoulder joint.",
+      "Status": "read",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-10T06:36:20.812Z"
+    },
+    {
+      "NotificationID": 7,
+      "UserID": 4,
+      "Title": "AI Safety Analysis Complete",
+      "Message": "Your Injury Risk is estimated as Medium. Alternatives recommended: Cable lateral raises to maintain constant tension without the extreme fatigue associated with heavy dumbbells, Scaption (lateral raises performed at a 30-degree angle to the front) to align better with the scapular plane.",
+      "Status": "read",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-10T06:36:42.319Z"
+    },
+    {
+      "NotificationID": 8,
+      "UserID": 4,
+      "Title": "High Pain Level Warning: Wrist",
+      "Message": "You reported a Level 6 pain for your Wrist. We strongly suggest running an AI Injury Risk Analysis and resting from heavy sets.",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-10T06:40:02.059Z"
+    },
+    {
+      "NotificationID": 9,
+      "UserID": 4,
+      "Title": "AI Safety Analysis Complete",
+      "Message": "Your Injury Risk is estimated as Medium. Alternatives recommended: Utilize an EZ-bar for bicep curls to place the wrists in a more natural, semi-supinated angle, Switch to neutral-grip dumbbell presses to reduce mechanical stress on the wrist stabilizers.",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-07-10T06:41:21.165Z"
+    },
+    {
+      "NotificationID": 10,
+      "UserID": 3,
+      "Title": "Ready to stretch and sweat?",
+      "Message": "It has been over 3 days since your last logged workout. If you are resting injuries, focus on core or low-impact cardio!",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-08-07T16:49:19.732Z"
+    },
+    {
+      "NotificationID": 11,
+      "UserID": 5,
+      "Title": "Welcome aboard!",
+      "Message": "Hi Demo User, welcome to the AI Injury Prevention Assistant. Complete your fitness profile to get detailed biomechanical injury risk scoring!",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-08-07T17:13:27.049Z"
+    },
+    {
+      "NotificationID": 12,
+      "UserID": 3,
+      "Title": "AI Safety Analysis Complete",
+      "Message": "Your Injury Risk is estimated as Medium. Alternatives recommended: Cable lateral raises for more consistent tension and reduced torque, Face pulls to strengthen the rear deltoids and improve shoulder stability.",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-08-08T04:23:23.922Z"
+    },
+    {
+      "NotificationID": 13,
+      "UserID": 3,
+      "Title": "AI Safety Analysis Complete",
+      "Message": "Your Injury Risk is estimated as Low. Alternatives recommended: Use a neutral grip bar or dumbbells to reduce torsional stress on the wrist joints, Switch to cable tricep extensions to allow for a more natural, fluid movement path.",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-08-08T04:29:34.019Z"
+    },
+    {
+      "NotificationID": 14,
+      "UserID": 3,
+      "Title": "AI Safety Analysis Complete",
+      "Message": "Your Injury Risk is estimated as Low. Alternatives recommended: Replace barbell tricep overhead extensions with rope cable extensions to allow for a neutral, more comfortable wrist orientation, Utilize neutral-grip dumbbells or kettlebells to minimize torque on the wrist joint during shoulder-focused movements.",
+      "Status": "unread",
+      "IsAnnouncement": false,
+      "CreatedAt": "2026-08-08T04:31:51.029Z"
+    }
+  ],
+  "PasswordReset": [],
+  "ActivityLog": [
+    {
+      "LogID": 1,
+      "UserID": 3,
+      "Activity": "User registered account",
+      "Time": "2026-07-09T17:57:10.727Z"
+    },
+    {
+      "LogID": 2,
+      "UserID": 3,
+      "Activity": "Updated fitness profile (BMI: 25.56)",
+      "Time": "2026-07-09T17:58:09.820Z"
+    },
+    {
+      "LogID": 3,
+      "UserID": 3,
+      "Activity": "Logged workout: Lateral Raises (3x10)",
+      "Time": "2026-07-09T17:59:25.643Z"
+    },
+    {
+      "LogID": 4,
+      "UserID": 3,
+      "Activity": "Logged pain report: Shoulder (Level 4/10)",
+      "Time": "2026-07-09T18:00:14.308Z"
+    },
+    {
+      "LogID": 5,
+      "UserID": 3,
+      "Activity": "Updated fitness profile (BMI: 25.56)",
+      "Time": "2026-07-09T18:01:26.791Z"
+    },
+    {
+      "LogID": 6,
+      "UserID": 3,
+      "Activity": "User logged in successfully",
+      "Time": "2026-07-09T18:08:07.177Z"
+    },
+    {
+      "LogID": 7,
+      "UserID": 4,
+      "Activity": "User registered account",
+      "Time": "2026-07-10T06:33:28.881Z"
+    },
+    {
+      "LogID": 8,
+      "UserID": 4,
+      "Activity": "Logged workout: Bicep Curl (3x10)",
+      "Time": "2026-07-10T06:34:21.346Z"
+    },
+    {
+      "LogID": 9,
+      "UserID": 4,
+      "Activity": "Logged workout: Overhead Shoulder Press (3x10)",
+      "Time": "2026-07-10T06:34:43.097Z"
+    },
+    {
+      "LogID": 10,
+      "UserID": 4,
+      "Activity": "Logged workout: Lateral Raises (3x10)",
+      "Time": "2026-07-10T06:35:20.803Z"
+    },
+    {
+      "LogID": 11,
+      "UserID": 4,
+      "Activity": "Logged pain report: Shoulder (Level 5/10)",
+      "Time": "2026-07-10T06:36:07.714Z"
+    },
+    {
+      "LogID": 12,
+      "UserID": 4,
+      "Activity": "Triggered AI Injury Risk Analysis (Risk: Medium)",
+      "Time": "2026-07-10T06:36:20.811Z"
+    },
+    {
+      "LogID": 13,
+      "UserID": 4,
+      "Activity": "Triggered AI Injury Risk Analysis (Risk: Medium)",
+      "Time": "2026-07-10T06:36:42.318Z"
+    },
+    {
+      "LogID": 14,
+      "UserID": 4,
+      "Activity": "Updated fitness profile (BMI: 22.86)",
+      "Time": "2026-07-10T06:37:05.159Z"
+    },
+    {
+      "LogID": 15,
+      "UserID": 4,
+      "Activity": "Logged pain report: Wrist (Level 6/10)",
+      "Time": "2026-07-10T06:40:02.057Z"
+    },
+    {
+      "LogID": 16,
+      "UserID": 4,
+      "Activity": "Triggered AI Injury Risk Analysis (Risk: Medium)",
+      "Time": "2026-07-10T06:41:21.163Z"
+    },
+    {
+      "LogID": 17,
+      "UserID": 3,
+      "Activity": "User logged in successfully",
+      "Time": "2026-08-07T16:49:19.652Z"
+    },
+    {
+      "LogID": 18,
+      "UserID": 5,
+      "Activity": "User registered account",
+      "Time": "2026-08-07T17:13:27.049Z"
+    },
+    {
+      "LogID": 19,
+      "UserID": 5,
+      "Activity": "Logged workout: Back Squat (4x10)",
+      "Time": "2026-08-07T17:15:15.057Z"
+    },
+    {
+      "LogID": 20,
+      "UserID": 3,
+      "Activity": "Triggered AI Injury Risk Analysis (Risk: Medium)",
+      "Time": "2026-08-08T04:23:23.921Z"
+    },
+    {
+      "LogID": 21,
+      "UserID": 3,
+      "Activity": "Updated fitness profile (BMI: 25.56)",
+      "Time": "2026-08-08T04:27:55.533Z"
+    },
+    {
+      "LogID": 22,
+      "UserID": 3,
+      "Activity": "Logged workout: Tricep Overhead Extension (3x10)",
+      "Time": "2026-08-08T04:28:23.856Z"
+    },
+    {
+      "LogID": 23,
+      "UserID": 3,
+      "Activity": "Logged pain report: Wrist (Level 3/10)",
+      "Time": "2026-08-08T04:29:18.026Z"
+    },
+    {
+      "LogID": 24,
+      "UserID": 3,
+      "Activity": "Triggered AI Injury Risk Analysis (Risk: Low)",
+      "Time": "2026-08-08T04:29:34.016Z"
+    },
+    {
+      "LogID": 25,
+      "UserID": 3,
+      "Activity": "Triggered AI Injury Risk Analysis (Risk: Low)",
+      "Time": "2026-08-08T04:31:51.027Z"
+    }
+  ]
+}
